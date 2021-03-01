@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "The Odin Project. Creating home page for restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fondaTHEhonda/restaurantpage.git"
+  },
+  "author": "Conor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fondaTHEhonda/restaurantpage/issues"
+  },
+  "homepage": "https://github.com/fondaTHEhonda/restaurantpage#readme",
+  "devDependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
