@@ -1,1 +1,1 @@
-console.log("Hey bro");
+(()=>{"use strict";!function(){console.log("Hey");const e=document.createElement("P");e.textContent="Cookie's Cookies",document.getElementById("content").appendChild(e)}()})();

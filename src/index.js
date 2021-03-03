@@ -1,1 +1,3 @@
-console.log("Hey bro")
+import {pageLoad} from "./homePage"
+
+pageLoad();
