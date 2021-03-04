@@ -1,3 +1,5 @@
-import {pageLoad} from "./homePage"
+import {loadHeader, loadReview, loadImage} from "./homePage"
 
-pageLoad();
+loadHeader();
+loadReview();
+loadImage();
