@@ -1,3 +1,3 @@
-import {pageContent} from "./homePage"
+import {menuContent} from "./menuPage"
 
-pageContent();
+menuContent();

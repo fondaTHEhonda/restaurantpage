@@ -5,7 +5,6 @@ loadHeader();
 const pageContent = function() {
     let pageDiv = document.createElement('div');
     pageDiv.id = "home-page"
-    pageDiv.style.height = "100%";
 
     let storeInfoContainer = document.createElement('div');
     let location = document.createElement('p');
