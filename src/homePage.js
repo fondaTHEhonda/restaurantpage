@@ -1,8 +1,7 @@
-import {loadHeader} from "./header"
-
-loadHeader();
+import {loadHeader} from "./header";
 
 const pageContent = function() {
+    loadHeader();
     let pageDiv = document.createElement('div');
     pageDiv.id = "home-page"
 

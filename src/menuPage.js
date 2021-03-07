@@ -1,6 +1,4 @@
-import {loadHeader} from "./header"
-
-loadHeader();
+import {loadHeader} from "./header";
 
 let cookies = [
     {Type: "Sugar", Description: "A classic cookie that reminds you of home", Price: "$1.99"},
@@ -15,6 +13,7 @@ let menuTable = document.createElement("table");
 let data = Object.keys(cookies[0]);
 
 function createTableHead(table, data) {
+
     let thead = table.createTHead();
     let row = thead.insertRow();
     for(let key of data) {
@@ -26,6 +25,7 @@ function createTableHead(table, data) {
 }
 
 function createTable(table, data) {
+
     for(let element of data) {
         let tRow = table.insertRow();
         for(let key in element) {
@@ -38,8 +38,10 @@ function createTable(table, data) {
 }
 
 const menuContent = function() {
-    createTable(menuTable, cookies);
-    createTableHead(menuTable, data);
+    loadHeader();
+
+    //createTable(menuTable, cookies);
+    //createTableHead(menuTable, data);
     
     let specials = document.createElement("div");
     let info = document.createElement("h3");

@@ -6,10 +6,13 @@ const loadHeader =  function() {
     navBar.id = "nav";
     let home = document.createElement("li");
     home.id = "home";
+    home.classList.add("navigation");
     let menu = document.createElement("li");
     menu.id = "menu";
+    menu.classList.add("navigation");
     let about = document.createElement("li");
     about.id = "about";
+    about.classList.add("navigation");
     home.textContent = "Home";
     menu.textContent = "Menu";
     about.textContent = "About";
