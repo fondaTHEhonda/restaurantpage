@@ -1,10 +1,6 @@
 body {
     margin: 0px;
 }
-#content {
-    height: 100%;
-    width: 100%;
-}
 
 header {
     display: flex;
@@ -23,7 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin-right: 10px;   
+    margin-right: 10px;
 }
 
 .navigation {
@@ -40,8 +36,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-around;
+    justify-content: space-around;
     background-color: #BDD9BF;
+    height: 100vh;
 }
 
 #store-container {
@@ -69,4 +66,14 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-text {
+    padding-right: 10px;
 }

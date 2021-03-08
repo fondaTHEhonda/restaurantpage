@@ -1,4 +1,5 @@
 import {loadHeader} from "./header";
+import {footer} from "./footer";
 
 const pageContent = function() {
     loadHeader();
@@ -24,7 +25,7 @@ const pageContent = function() {
     storeInfoContainer.appendChild(hours);
 
     let review = document.createElement("p");
-    review.textContent = "This place has the best cookies! The staff is very welcoming and if you're lucky, they'll give you a cookie infused with nip."
+    review.textContent = "This place has the best cookies! The staff is very welcoming and if you're lucky, they'll give you a cookie infused with nip. - Gus K."
 
     let imageContainer = document.createElement('div');
     imageContainer.id = "images";
@@ -64,7 +65,6 @@ const pageContent = function() {
     pageDiv.appendChild(review);
     pageDiv.appendChild(storeInfoContainer);
     pageDiv.appendChild(imageContainer);
-    
 
     return document.getElementById("content").appendChild(pageDiv);
 }
