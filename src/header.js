@@ -1,6 +1,7 @@
 const loadHeader =  function() {
     let header = document.createElement("header");
     let restName = document.createElement("h1");
+    restName.id = "rest-title"
     restName.textContent = "Cookie's Cookies"
     let navBar = document.createElement("ul");
     navBar.id = "nav";

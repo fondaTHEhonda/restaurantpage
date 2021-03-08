@@ -8,7 +8,7 @@ let cookies = [
     {Type: "Oatmeal Raisin", Description: "Brown sugar, cinnamon, and raisins. A simple but delicious cookie", Price: "$1.99"},
     {Type: "Cookie's Special", Description: "A cat friendly treat infused with catnip", Price: "$2.49"}
 ];
-
+let tableDiv = document.createElement("div");
 let menuTable = document.createElement("table");
 let data = Object.keys(cookies[0]);
 
@@ -34,14 +34,15 @@ function createTable(table, data) {
             cell.appendChild(cellText);
         }
     }
-    return document.getElementById('content').appendChild(menuTable);
+    tableDiv.appendChild(menuTable);
+    return document.getElementById('content').appendChild(tableDiv);
 }
 
 const menuContent = function() {
     loadHeader();
 
-    //createTable(menuTable, cookies);
-    //createTableHead(menuTable, data);
+    createTable(menuTable, cookies);
+    createTableHead(menuTable, data);
     
     let specials = document.createElement("div");
     let info = document.createElement("h3");
