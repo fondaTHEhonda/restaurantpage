@@ -6,7 +6,7 @@ const footer = function() {
     footerP.textContent = 'Created by Fonda for The Odin Project';
     footerP.classList.add("footer-text");
     let copyright = document.createElement('p');
-    copyright.textContent = "&copy 2021";
+    copyright.innerHTML = "&copy;" + " " + "2021";
     copyright.classList.add("footer-text");
 
     footer.appendChild(footerP);

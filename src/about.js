@@ -9,10 +9,12 @@ const contactContent = function() {
     ownerDiv.id = "owner-display";
 
     let cookieImg = document.createElement('img');
-    cookieImg.src = "";
+    cookieImg.src = "https://www.thesprucepets.com/thmb/_w_4qXWKki2VZ_ie-MzVpv9B8YQ=/1964x1473/smart/filters:no_upscale()/GettyImages-584178259-5a721010119fa80037ed3cce.jpg";
+    cookieImg.classList.add("owner-image");
 
     let tuxImg = document.createElement('img');
-    tuxImg.src = "";
+    tuxImg.src = "https://cattime.com/assets/uploads/2017/10/tuxedo-cat-2-e1569622438857-1280x720.jpg";
+    tuxImg.classList.add("owner-image");
 
     let cookieDesc = document.createElement('p');
     let tuxDesc = document.createElement('p');
@@ -21,8 +23,8 @@ const contactContent = function() {
     tuxDesc.textContent = "Tuxedo loves food and will do anything to be around it. His passion for cookies knows no bounds."
 
     ownerDiv.appendChild(cookieImg);
-    ownerDiv.appendChild(tuxImg);
     ownerDiv.appendChild(cookieDesc);
+    ownerDiv.appendChild(tuxImg);
     ownerDiv.appendChild(tuxDesc);
 
     contactContainer.appendChild(ownerDiv);

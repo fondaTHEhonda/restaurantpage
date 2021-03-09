@@ -72,8 +72,34 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #2E4052;
+    color: white;
 }
 
 .footer-text {
     padding-right: 10px;
+}
+
+#owner-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.owner-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #412234;
+    color: white;
 }
