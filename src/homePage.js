@@ -7,7 +7,7 @@ const pageContent = function() {
     pageDiv.id = "home-page"
 
     let storeInfoContainer = document.createElement('div');
-    storeInfoContainer.id = "store-container";
+    storeInfoContainer.classList.add("info-container");
     let location = document.createElement('p');
     location.textContent = "9041 Snowden Square Dr" +  "\n" + "Columbia, MD 21045";
     let phone = document.createElement('p');
