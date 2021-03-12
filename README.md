@@ -31,3 +31,5 @@
 
     - Simply follow the instructions on this gist. EZPZ!
     - Recall that the source branch for GitHub Pages is set in your repository’s settings.
+
+The project is finished. It isn't great. Designed the aesthetics are not a strong suit. I'm more focussed on getting down the problem solving and creating the actual elements through Javascript. What looks good as far as styling will come with time and frankly, projects that I find more interesting. I'm not sure I understand the benefit of creating all of the HTML through Javascript. It felt like more work. Also, I forgot to put comments in any of this code. 
