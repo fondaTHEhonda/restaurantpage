@@ -9,21 +9,12 @@ let cookies = [
     {Type: "Cookie's Special", Description: "A cat friendly treat infused with catnip", Price: "$2.49"}
 ];
 
-let pageContainer = document.createElement('div');
-pageContainer.id = "page-container";
-let tableDiv = document.createElement("div");
-tableDiv.id = "table-div";
-let menuTable = document.createElement("table");
-menuTable.id = "table-display";
+
 let data = Object.keys(cookies[0]);
 
-let menu = document.createElement('p');
-menu.textContent = "Menu";
-menu.id = "menu-p";
-pageContainer.appendChild(menu);
+  
 
 function createTableHead(table, data) {
-
     let thead = table.createTHead();
     let row = thead.insertRow();
     for(let key of data) {
@@ -36,7 +27,7 @@ function createTableHead(table, data) {
 }
 
 function createTable(table, data) {
-
+    
     for(let element of data) {
         let tRow = table.insertRow();
         for(let key in element) {
@@ -45,14 +36,20 @@ function createTable(table, data) {
             cell.appendChild(cellText);
         }
     }
-    
-    tableDiv.appendChild(menuTable);
-    pageContainer.appendChild(tableDiv);
-    return document.getElementById('content').appendChild(pageContainer);
 }
 
 const menuContent = function() {
     loadHeader();
+    let pageContainer = document.createElement('div');
+    pageContainer.id = "page-container";
+    let tableDiv = document.createElement("div");
+    tableDiv.id = "table-div";
+    let menuTable = document.createElement("table");
+    menuTable.id = "table-display";
+    let menu = document.createElement('p');
+    menu.textContent = "Menu";
+    menu.id = "menu-p";
+    pageContainer.appendChild(menu);
 
     createTable(menuTable, cookies);
     createTableHead(menuTable, data);
@@ -76,6 +73,8 @@ const menuContent = function() {
     bogo.textContent = "Buy any 2 cookies, get 1 free on Mondays!"
 
     specials.appendChild(info);
+    tableDiv.appendChild(menuTable);
+    pageContainer.appendChild(tableDiv);
 
     specialInfo.appendChild(dailyDeal);
     specialInfo.appendChild(occupationDeal);
@@ -83,8 +82,6 @@ const menuContent = function() {
 
     specials.appendChild(specialInfo);
     pageContainer.appendChild(specials);
-
-
 
     return document.getElementById("content").appendChild(pageContainer);
 

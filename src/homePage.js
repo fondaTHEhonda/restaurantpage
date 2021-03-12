@@ -1,11 +1,13 @@
 import {loadHeader} from "./header";
 import {footer} from "./footer";
 
+
+
 const pageContent = function() {
     loadHeader();
+    
     let pageDiv = document.createElement('div');
     pageDiv.id = "home-page"
-
     let storeInfoContainer = document.createElement('div');
     storeInfoContainer.classList.add("info-container");
     let location = document.createElement('p');
@@ -67,7 +69,6 @@ const pageContent = function() {
     pageDiv.appendChild(imageContainer);
     pageDiv.appendChild(storeInfoContainer);
     
-
     return document.getElementById("content").appendChild(pageDiv);
 }
 
